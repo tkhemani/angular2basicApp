@@ -1,0 +1,16 @@
+<form>
+	<label for="username">Username:</label>
+	<md-input-container>
+		<input id="username" type="text" 
+	 	   [(ng-model)]="username"></input>
+</md-input-container>
+
+<md-input-container>
+	<label for="password">Username:</label>
+	<input id="password" type="password" [(ng-model)]="password"></input>
+</md-input-container>
+		
+	<button (click)="login()">Login</button>
+		
+    {{username}}/{{password}}
+</form>
